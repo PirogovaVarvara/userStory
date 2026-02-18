@@ -1,0 +1,10 @@
+## Ignore Visual Studio temporary files
+.vs/
+*.vsidx
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.pidb
+*.userprefs
