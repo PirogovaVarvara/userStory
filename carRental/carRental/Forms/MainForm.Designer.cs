@@ -1,4 +1,6 @@
-﻿namespace carRental
+﻿using System.Runtime.CompilerServices;
+
+namespace carRental
 {
     partial class MyForm
     {
@@ -28,8 +30,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyForm));
             dataGridView1 = new DataGridView();
-            CarNumbers = new DataGridViewTextBoxColumn();
             Brand = new DataGridViewTextBoxColumn();
             StateNumber = new DataGridViewTextBoxColumn();
             MileageInKm = new DataGridViewTextBoxColumn();
@@ -38,22 +40,20 @@
             CostOfRentPerMinuteInRuble = new DataGridViewTextBoxColumn();
             FuelReserve = new DataGridViewTextBoxColumn();
             RentalAmount = new DataGridViewTextBoxColumn();
+            toolStrip1 = new ToolStrip();
+            toolStripButton1 = new ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { CarNumbers, Brand, StateNumber, MileageInKm, AvgFuelConsumptionPerHourInLiter, CurrentFuelVolumeInLiters, CostOfRentPerMinuteInRuble, FuelReserve, RentalAmount });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Brand, StateNumber, MileageInKm, AvgFuelConsumptionPerHourInLiter, CurrentFuelVolumeInLiters, CostOfRentPerMinuteInRuble, FuelReserve, RentalAmount });
             dataGridView1.Location = new Point(39, 156);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(943, 145);
+            dataGridView1.Size = new Size(843, 145);
             dataGridView1.TabIndex = 0;
-            // 
-            // CarNumbers
-            // 
-            CarNumbers.HeaderText = "№ машины";
-            CarNumbers.Name = "CarNumbers";
             // 
             // Brand
             // 
@@ -103,16 +103,38 @@
             RentalAmount.HeaderText = "Сумма аренды";
             RentalAmount.Name = "RentalAmount";
             // 
+            // toolStrip1
+            // 
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButton1 });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(1154, 25);
+            toolStrip1.TabIndex = 1;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            toolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButton1.Image = (Image)resources.GetObject("toolStripButton1.Image");
+            toolStripButton1.ImageTransparentColor = Color.Magenta;
+            toolStripButton1.Name = "toolStripButton1";
+            toolStripButton1.Size = new Size(23, 22);
+            toolStripButton1.Text = "toolStripButton1";
+            // 
             // MyForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1154, 450);
+            Controls.Add(toolStrip1);
             Controls.Add(dataGridView1);
             Name = "MyForm";
             Text = "MyForm";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -127,5 +149,9 @@
         private DataGridViewTextBoxColumn CostOfRentPerMinuteInRuble;
         private DataGridViewTextBoxColumn FuelReserve;
         private DataGridViewTextBoxColumn RentalAmount;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
+
+        //this.SaveButton.Location = new System.Drawing.Point(13, 320)
     }
 }
