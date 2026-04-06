@@ -1,7 +1,0 @@
-<Solution>
-  <Folder Name="/Элементы решения/">
-    <File Path=".gitignore.txt" />
-  </Folder>
-  <Project Path="CarRental.Models/CarRental.Models.csproj" Id="c0d46465-8abf-468b-b6ce-b56ef24f9661" />
-  <Project Path="carRental/CarRental.WinForms.csproj" />
-</Solution>

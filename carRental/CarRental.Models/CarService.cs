@@ -64,8 +64,15 @@ namespace carRental.BL
         {
             var total = repository.Cars.Count;
             var lowFuel = 0;
+
             foreach (var c in repository.Cars)
-                if (c.CurrentFuelVolumeInLiters < 7) lowFuel++;
+            {
+                if (c.CurrentFuelVolumeInLiters < 7)
+                { 
+                    lowFuel++; 
+                }
+            };
+
             return (total, lowFuel);
         }
     }
