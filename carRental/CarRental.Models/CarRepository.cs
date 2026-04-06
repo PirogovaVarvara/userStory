@@ -31,7 +31,9 @@ namespace carRental.DAL
             Cars.Add(new Car("Митсубиси Аутлендер", "к789ек", 45000, 10.0, 35, 45, 0, 0));
 
             foreach (var car in Cars)
+            {
                 car.UpdateCalculatedFields();
+            }
         }
     }
 }
