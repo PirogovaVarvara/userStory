@@ -1,6 +1,0 @@
-<Solution>
-  <Folder Name="/Элементы решения/">
-    <File Path=".gitignore.txt" />
-  </Folder>
-  <Project Path="carRental/carRental.csproj" />
-</Solution>

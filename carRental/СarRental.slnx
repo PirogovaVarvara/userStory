@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/BLL/">
+    <Project Path="BLL/CarRental.Services.Contracts/CarRental.Services.Contracts.csproj" Id="5c121bfa-b3b2-4a3e-886f-c6911bec116a" />
+    <Project Path="BLL/CarRental.Services/CarRental.Services.csproj" Id="e1acb9d2-5248-4f91-9c03-ffbe695053e4" />
+  </Folder>
+  <Folder Name="/DAL/">
+    <Project Path="DAL/CarRental.Storage.Contracts/CarRental.Storage.Contracts.csproj" Id="ac38a9c6-692f-43dc-a866-cd3c2ec01f97" />
+    <Project Path="DAL/CarRental.Storage.InMemory/CarRental.Storage.InMemory.csproj" Id="099f1870-eafe-427d-ac61-3b81b3352b59" />
+  </Folder>
+  <Folder Name="/Элементы решения/">
+    <File Path=".gitignore.txt" />
+  </Folder>
+  <Project Path="CarRental.Models/CarRental.Models.csproj" Id="c0d46465-8abf-468b-b6ce-b56ef24f9661" />
+  <Project Path="CarRental.WinForms/CarRental.WinForms.csproj" />
+</Solution>
